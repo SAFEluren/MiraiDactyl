@@ -1,6 +1,5 @@
-package org.example.mirai.plugin
+package space.safeluren.mlpl.miraidactyl
 
-import net.mamoe.mirai.alsoLogin
 import net.mamoe.mirai.console.MiraiConsole
 import net.mamoe.mirai.console.plugin.PluginManager.INSTANCE.enable
 import net.mamoe.mirai.console.plugin.PluginManager.INSTANCE.load
@@ -16,9 +15,9 @@ suspend fun main() {
 //    JavaPluginMain.INSTANCE.load()
 //    JavaPluginMain.INSTANCE.enable()
 
-    val bot = MiraiConsole.addBot(123456, "") {
-        fileBasedDeviceInfo()
-    }.alsoLogin()
+//    val bot = MiraiConsole.addBot(123456, "") {
+//        fileBasedDeviceInfo()
+//    }.alsoLogin()
 
     MiraiConsole.job.join()
 }
